@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/music_broadcast_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/music_album02"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/music_album"/>
+
+        <RelativeLayout
+            android:id="@+id/music_name_singer02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/music_album02"
+            android:layout_alignTop="@+id/music_album02"
+            android:layout_alignBottom="@+id/music_album02">
+
+            <TextView
+                android:id="@+id/music_name02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="name"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/music_singer02"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/music_name02"
+                android:layout_marginBottom="10dp"
+                android:layout_alignLeft="@+id/music_name"
+                android:layout_marginLeft="10dp"
+                android:text="singer"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/music_duration02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="duration"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background02">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/repeat_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/repeat_music_selector" />
+
+        <Button
+            android:id="@id/shuffle_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shuffle_music_selector" />
+
+        <TextView
+            android:id="@+id/music_name03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+            android:text="name03"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/music_singer03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/music_name03"
+            android:layout_centerHorizontal="true"
+            android:text="singer03"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/music_words_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top" >
+
+        <TextView
+            android:id="@+id/music_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="好歌不容错过"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/player_progress_bg"
+        android:progressDrawable="@drawable/seekbar_img"
+        android:thumb="@drawable/media_player_progress_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar">
+
+        <TextView
+            android:id="@+id/current_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/final_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/music_broadcast_operation_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/search_music"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_music_selector"/>
+
+        <Button
+            android:id="@id/previous_music"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/previous_music_selector"/>
+
+        <Button
+            android:id="@id/pause_music"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pause_selector"/>
+
+        <Button
+            android:id="@id/next_music"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_music_selector"/>
+
+        <Button
+            android:id="@+id/music_queue"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/music_queue_selector"/>
+    </LinearLayout>
+
+</RelativeLayout>
